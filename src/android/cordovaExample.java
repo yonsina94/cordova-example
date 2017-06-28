@@ -30,8 +30,8 @@ public class cordovaExample extends CordovaPlugin {
         } else if(action.equals("calculate")){
             JSONObject obj = args.getJSONObject(0);
             String operation = obj.getString("operacion");
-            int val1 = obj.getInteger("val1");
-            int val2 = obj.getInteger("val2");
+            int val1 = obj.getInt("val1");
+            int val2 = obj.getInt("val2");
             this.calculate(operation, val1, val2, callbackContext);
         }
         return true;
