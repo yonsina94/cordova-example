@@ -3,8 +3,8 @@
     <name>cordova-example</name>
     <AUTHOR>Yansi Mora</AUTHOR>
 
-        <js-module name="cordova-example" src="www/cordova-example.js">
-            <clobbers target="cordova.plugins.cordova-example" />
+        <js-module name="cordovaExample" src="www/cordovaExample.js">
+            <clobbers target="cordova.plugins.cordovaExample" />
         </js-module>
 
         <platform name="android">
