@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.anatsoft.example" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-example</name>
+    <AUTHOR>Yansi Mora</AUTHOR>
+
+        <js-module name="cordova-example" src="www/cordova-example.js">
+            <clobbers target="cordova.plugins.cordova-example" />
+        </js-module>
+
+        <platform name="android">
+
+            <config-file parent="/*" target="res/xml/config.xml">
+                <feature name="cordovaExample">
+                    <param name="android-package" value="com.anatsoft.example.cordovaExample" />
+                </feature>
+            </config-file>
+
+            <config-file parent="/*" target="AndroidManifest.xml">
+            </config-file>
+
+            <source-file src="src/android/cordovaExample.java" target-dir="src/com/anatsoft/example/cordovaExample" />
+            
+        </platform>
+
+    </plugin>
