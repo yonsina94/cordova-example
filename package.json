@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-example",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.anatsoft.example",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonsina94/cordova-example.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Yansi Mora (yonsina94)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonsina94/cordova-example/issues"
+  },
+  "homepage": "https://github.com/yonsina94/cordova-example#readme"
+}
