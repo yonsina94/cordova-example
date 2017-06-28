@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.anatsoft.example" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-example</name>
+    <name>cordovaExample</name>
     <AUTHOR>Yansi Mora</AUTHOR>
 
         <js-module name="cordovaExample" src="www/cordovaExample.js">
