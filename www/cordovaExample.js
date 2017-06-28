@@ -9,10 +9,10 @@ EchoPlugin.prototype.echo = (options, success, error) => {
 }
 
 
-EchoPlugin.prototype.calculate = (operation, sucess, error) => {
-    operation = operation || { operation: "suma", val1: 1, val2: 1 }
+EchoPlugin.prototype.calculate = (operacion, sucess, error) => {
+    operacion = operacion || { operation: "suma", val1: 1, val2: 1 };
 
-    exec(sucess, error, "cordovaExample", "calculate", [operation])
+    exec(sucess, error, "cordovaExample", "calculate", [operacion]);
 }
 
 

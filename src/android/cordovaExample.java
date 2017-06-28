@@ -29,9 +29,9 @@ public class cordovaExample extends CordovaPlugin {
             }
         } else if(action.equals("calculate")){
             JSONObject obj = args.getJSONObject(0);
-            String operation = obj.getString("operacion");
-            int val1 = obj.getInt("val1");
-            int val2 = obj.getInt("val2");
+            String operation = obj.getString("operation");
+            int val1 = obj.getFloat("val1");
+            int val2 = obj.getFloat("val2");
             this.calculate(operation, val1, val2, callbackContext);
         }
         return true;
@@ -48,26 +48,32 @@ public class cordovaExample extends CordovaPlugin {
         }
     }
 
-    private void calculate(String operation,int val1, int val2,CallbackContext callback){
+    private String toStr(double result){
+        Double r = new Double(result);
+        return r.toString();
+    }
+
+    private void calculate(String operation,float val1, float val2,CallbackContext callback){
+        double reslt;
         if(operation != null){
             switch (operation) {
                 case "suma":
-                    double result = val1 + val2;
-                    callback.success(result.toString());
+                    reslt =(val1 + val2);
+                    callback.success(toStr(reslt));
                     break;
                 case "resta":
-                    double result = val1 - val2;
-                    callback.success(result.toString());
+                    reslt =(val1 - val2);
+                    callback.success(toStr(reslt));
                 break;
 
                 case "multiplicacion":
-                    double result = val1 * val2;
-                    callback.success(result.toString());
+                    reslt =(val1 * val2);
+                    callback.success(toStr(reslt));
                 break;
 
                 case "division":
-                    double result = val1 / val2;
-                    callback.success(result.toString());
+                    reslt =(val1 / val2);
+                    callback.success(toStr(reslt));
                 break;
 
                 default:
